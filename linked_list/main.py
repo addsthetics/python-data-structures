@@ -19,7 +19,7 @@ def main():
     list1.remove(5)
     print list1
     # 2) 3=>2=>4=>1=>5=>None remove(5) 3=>2=>4=>1=>None
-    # list1.remove_front()
+    list1.remove_front()
     # print list1
     # 3) 3=>2=>4=>1=>5=>None remove(3) 2=>4=>1=>5=>None
     # list1.remove_back()
