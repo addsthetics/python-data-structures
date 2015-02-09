@@ -1,4 +1,4 @@
-class doubly_linked_list_node(object):
+class DoublyLinkedLIstNode(object):
     def __init(self, value):
         self.value = value
         self.previous_node = None
