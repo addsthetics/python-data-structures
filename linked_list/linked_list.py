@@ -111,9 +111,8 @@ class LinkedList(object):
         list_str = ""
         if not self.is_empty():
             current_node = self.head
-            while current_node is not None:
-                list_str += str(current_node.get_value()) + "=>"
-                current_node = current_node.get_next_node()
+            for node in self.enumerate():
+                list_str += str(node) + "=>"
             list_str += "None"
         else:
             list_str = "This List is empty!"
