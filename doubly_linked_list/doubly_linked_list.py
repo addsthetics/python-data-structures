@@ -18,3 +18,16 @@ class DoublyLinkedList(object):
 
         self.length += 1
 
+    def enumerate(self, forward):
+        if forward:
+            current_node = self.head
+        else:
+            current_node = self.tail
+
+        while current_node != None:
+            if forward:
+                current_node = self.head
+            else:
+                current_node = self.tail
+
+

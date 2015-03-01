@@ -7,7 +7,6 @@ def main():
     d_list.add_to_front(3)
     # <=3=> ATF(4) <=3==4=>
     d_list.add_to_front(4)
-    pass
 
 if __name__ == "__main__":
     main()

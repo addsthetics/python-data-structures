@@ -27,7 +27,7 @@ class LinkedList(object):
         """
         node = LinkedListNode(value)
         if self.is_empty():
-            self.tail = node
+            self.head = node
         else:
             self.tail.set_next_node(node)
         self.tail = node
@@ -101,21 +101,21 @@ class LinkedList(object):
         """
         current_node = self.head
         while current_node != None:
-            yield current_node.value
+            yield current_node
             current_node = current_node.get_next_node()
 
     def __str__(self):
         """
          O(n)
         """
-        list_str = ""
         if not self.is_empty():
-            current_node = self.head
+            buffer_array = []
             for node in self.enumerate():
-                list_str += str(node) + "=>"
-            list_str += "None"
+                buffer_array.append(str(node))
+                buffer_array.append(str('=>'))
+            buffer_array.append('None')
+            return ''.join(buffer_array)
         else:
-            list_str = "This List is empty!"
+            return 'This Linked List is empty!'
 
-        return list_str
 
